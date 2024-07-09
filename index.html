@@ -1,0 +1,563 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="styles.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+	<script src="https://kit.fontawesome.com/c72029c7f4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head> 
+
+<body> 
+	<!-- Navbar header section -->
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="logo"> 
+				<h2 class="logo-heading"></h2> 
+			</div> 
+			<div class="hamburger" id="hamburger"> 
+				<i class="fas fa-bars hamburger-icon"></i> 
+				<i class="fas fa-times cross-icon"></i> 
+			</div> 
+			<div class="menu"> 
+				<ul class="menu-list"> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#home"> 
+							Home 
+						</a> 
+					</li> 
+					
+					<li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							About 
+						</a> 
+					</li> 
+					
+					<li class="menu-list-items"> 
+						<a class="links" href="#skills"> 
+							Skills
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#portfolio"> 
+							Portfolio 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							Contact
+						</a> 
+					</li> 
+					
+				</ul> 
+				
+			</div> 
+		</nav> 
+	</header> 
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			
+            <div class="header-text">
+                <h1>I'M <span class="name">Smita patel</span></h1>
+				<h1>I'm a enthusiastic <br><span class="test"></span></h1>
+				<a id="resumeLink" href="file.pdf" download="resume.pdf" style="display: none;">Download</a>
+                <button class="btn ghost-btn" id="resumeButton">Resume</button>
+            </div>
+
+            <div class="social-media">
+                <a href="#"><img src="twitter.png" alt="twitter-icon"></a>
+                <a href="https://github.com/smitapatel12"><img src="github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/smita-patel-a78064230/"><img src="linkdin.png" alt="linkdin"></a>
+                <a href="#"><img src="whatsapp.png" alt="whatsapp-icon"></a>
+            </div>
+		</div> 
+	</section> 
+
+
+	<!-- About Section -->
+	<!-- <section id="about" class="about"> 
+		<div class="about-container">
+			<h1>About Me</h1>
+			<div class="about-content">
+				<div class="about-line"></div>
+				<p>
+					My name is Smita patel. <br> I am from varanasi. <br>I am a 3rd year student at Madan Mohan
+					Malaviya University Of Technology from CSE branch. <br>My goal is to become a Full Stack
+					Developer.<br><br>
+				</p>
+				<p> 
+					Our exceptional mentors hailing from top 
+					colleges & organizations have the 
+					ability to guide you on a journey from 
+					the humble beginnings of coding to 
+					the pinnacle of expertise. Under their 
+					guidance watch your skills flourish 
+					as we lay the foundation and help you 
+					conquer the world of coding. 
+				</p> 
+				
+			</div>
+			
+		</div>
+
+		
+	</section>  -->
+
+	<section id="about" class="about"> 
+		<div class="about-container">
+			<h1>About Me</h1>
+			<div class="about-content">
+				<div class="about-line"></div>
+				<p>
+					My name is Smita Patel. <br> I am from Varanasi. <br> I am a 3rd year student at Madan Mohan
+					Malaviya University Of Technology from CSE branch. <br> My goal is to become a Full Stack
+					Developer.<br><br>
+				</p>
+				<!-- <p> 
+					Our exceptional mentors hailing from top 
+					colleges & organizations have the 
+					ability to guide you on a journey from 
+					the humble beginnings of coding to 
+					the pinnacle of expertise. Under their 
+					guidance watch your skills flourish 
+					as we lay the foundation and help you 
+					conquer the world of coding. 
+				</p> -->
+	
+				<!-- Tabbed content section -->
+				<div class="tab-titles">
+					<p class="tab-links" onclick="opentab('Experience')">Achievements</p>
+					<p class="tab-links" onclick="opentab('Education')">Education</p>
+				</div>
+				<div class="tab-contents" id="Experience">
+					<ul>
+						<li><span>Codechef</span><br>-> Highest Ranking 1234</li>
+						<li><span>Hackerrank</span><br>-> 3-Star C++ Coder</li>
+						<li>-> 3-Star C Coder</li>
+						<li>-> 2-Star Java Coder</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="Education">
+					<ul>
+						<li><span>2018</span><br>-> Passed class 10 (88%)</li>
+						<li><span>2020</span><br>-> Passed class 12 PCM (90.2%)</li>
+						<li><span>2021-2025</span><br>-> B.Tech (CSE) MMMUT, Gorakhpur</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+	<!-- Skills Section -->
+
+ <section class="skills" id="skills"> 
+	<div class="services-heading"> 
+		<h1 class="my-heading text-center">MY SKILLS</h1> 
+	</div> 
+	<div class="skills-content"> 
+		<div class="my-row"> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="html.png" alt="Python" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">HTML5</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="css.png" alt="Flutter" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">CSS</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="js.png" alt="Ubuntu" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">Javascript</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="bootstrap.png" alt="Git" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">Bootstrap</h3> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="my-row"> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="tailwind.png" alt="ERPNext" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">Tailwind</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="git.png" alt="MongoDB" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">Git</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="react.png" alt="HTML & CSS" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">React</h3> 
+				</div> 
+			</div> 
+			<div class="my-col"> 
+				<div class="my-card"> 
+					<div class="icon"> 
+						<img src="c++.png" alt="JavaScript" class="skill-icon">
+					</div> 
+					<h3 class="greet-heading">C++</h3> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</section>
+
+
+		<!-- Portfolio Section -->
+		<section class="portfolio" id="portfolio"> 
+			<div class="portfolio-heading"> 
+				<h1 class="my-heading text-center">Featured Portfolio</h1>  
+			</div> 
+			<div class="portfolio-content"> 
+				<div class="my-row"> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="Calculator2.jpg" alt="Web Design Image"> 
+							</div> 
+							<div class="layer">
+								<h3>Calculator</h3>
+								<p>A basic calculator application.</p>
+								<a href="https://smitapatel12.github.io/Calculator/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="temperature.jpg" alt="Temperature Convertor Image"> 
+							</div> 
+							<div class="layer">
+								<h3>Temperature Convertor</h3>
+								<p>A temperature conversion application.</p>
+								<a href="https://smitapatel12.github.io/Temperature_Convertor/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="time.jpg" alt="Time App Image"> 
+							</div> 
+							<div class="layer">
+								<h3>Time App</h3>
+								<p>An application that displays time and date.</p>
+								<a href="https://smitapatel12.github.io/Time_App/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+				</div> 
+				<div class="my-row"> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="todolist2.jpg" alt="To Do List Image"> 
+							</div> 
+							<div class="layer">
+								<h3>To Do List</h3>
+								<p>A list of tasks organized by priority.</p>
+								<a href="https://smitapatel12.github.io/To_Do_List/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="Amazon-Clone.jpg" alt="WordPress Image"> 
+							</div> 
+							<div class="layer">
+								<h3>Amazon-Clone</h3>
+								<p>A robust e-commerce platform simulating Amazon's core features.</p>
+								<a href="https://smitapatel12.github.io/Amazon_clone/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+					<div class="my-col"> 
+						<div class="my-card port-card work"> 
+							<div class="image"> 
+								<img src="rock-paper-scissor-game.jpg" alt="Video Editing Image"> 
+							</div> 
+							<div class="layer">
+								<h3>Rock-Paper-Scissor-game</h3>
+								<p> A classic game of chance where players choose between rock, paper, or scissors.</p>
+								<a href="https://smitapatel12.github.io/Rock-Paper-scissor-game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+							</div>
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+			 <!-- See More Button -->
+			 
+				<a href="#" class="btn-see-more">See More</a>
+			
+		</section>
+		
+
+	<!-- Contact me section -->
+	<!-- <section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<h1 class="my-heading text-center">Contact Me</h1> 
+		</div> 
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Email"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Phone"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="" cols="30"
+							rows="10"> 
+					</textarea> 
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">My Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">example@gmail.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+91 0123456789</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">FAX</h5> 
+					<p class="contact-text">+91 0123456789</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">San Francisco, CA</p> 
+					<p>4th Floor8 Lower</p> 
+					<p>San Francisco street, M1 50F</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section>  -->
+	<section class="contact" id="contact">
+		<div class="contact-heading-wrapper">
+			<h1 class="my-heading text-center">Contact Me</h1>
+		</div>
+		<div class="contact-content">
+			<div class="contact-details">
+				<div class="details">
+					<h5 class="contact-heading">
+						<img src="email.png" alt="Email Icon"> spatel.mgs1206@gmail.com
+					</h5>
+				</div>
+				<div class="details">
+					<h5 class="contact-heading">
+						<img src="phone.png" alt="Phone Icon"> (+91) 8318422930
+					</h5>
+				</div>
+				<div class="details">
+					<h5 class="contact-heading">
+						<img src="location.png" alt="Location Icon"> Mughalsarai, Uttar Pradesh
+					</h5>
+				</div>
+				
+			</div>
+			
+		
+		</div>
+		
+		
+	</section>
+	
+<!-- footer section -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="social-links">
+				<ul class="footer-menu-list">
+					<li class="footer-list-items">
+						<a class="footer-links" href="#">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</li>
+					<li class="footer-list-items">
+						<a class="footer-links" href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="footer-list-items">
+						<a class="footer-links" href="https://github.com/smitapatel12">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li class="footer-list-items">
+						<a class="footer-links" href="https://www.linkedin.com/in/smita-patel-a78064230/">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="thanks-message">
+				<p>"Thank You"</p>
+			</div>
+		</div>
+	</footer>
+	
+	
+
+
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+		integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script> 
+	<script src="script.js"></script> 
+	<script>
+        document.getElementById('resumeButton').addEventListener('click', function() {
+            document.getElementById('resumeLink').click();
+        });
+    </script>
+	<script>
+		var typed = new Typed('.test', {
+		  strings: ['CODER ','Frontend Developer'],
+		  typeSpeed: 50,
+		  backDelay: 1000,
+		  loop: true
+		});
+		
+	  </script>
+
+	  <script>
+		function opentab(tabId) {
+    // Hide all tab contents
+    var contents = document.querySelectorAll('.tab-contents');
+    contents.forEach(content => content.classList.remove('active-tab'));
+
+    // Remove active-link class from all tab links
+    var links = document.querySelectorAll('.tab-links');
+    links.forEach(link => link.classList.remove('active-link'));
+
+    // Show the selected tab content and add active-link class
+    document.getElementById(tabId).classList.add('active-tab');
+    document.querySelector(`.tab-links[onclick="opentab('${tabId}')"]`).classList.add('active-link');
+}
+
+	  </script>
+
+<script>
+    // Function to check the scroll position
+    function checkScroll() {
+        const navbar = document.querySelector('.header'); // Select the navbar
+        const homeSection = document.querySelector('#home'); // Select the home section
+
+        // Get the position of the home section relative to the viewport
+        const homeTop = homeSection.getBoundingClientRect().top;
+
+        // Check if the scroll position is past the home section
+        if (homeTop < 0) {
+            navbar.classList.add('hidden-navbar'); // Hide navbar
+        } else {
+            navbar.classList.remove('hidden-navbar'); // Show navbar
+        }
+    }
+
+    // Check scroll position on page load and on scroll
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+</script>
+
+
+<!-- Add this script at the end of your HTML document before the closing body tag -->
+<script>
+	const additionalPortfolioItems = [
+	  `
+	  <div class="my-row">
+		<div class="my-col">
+		  <div class="my-card port-card work">
+			<div class="image">
+			  <img src="tic-tac-toe.png" alt="New Portfolio Item 1">
+			</div>
+			<div class="layer">
+			  <h3>Tic-Tac-Toe-game</h3>
+			  <p>A simple yet fun Tic Tac Toe game.</p>
+			  <a href="https://smitapatel12.github.io/Tic_Tac_Toe/"><i class="fa-solid fa-up-right-from-square"></i></a>
+			</div>
+		  </div>
+		</div>
+		<div class="my-col">
+		  <div class="my-card port-card work">
+			<div class="image">
+			  <img src="nature.jpg" alt="New Portfolio Item 2">
+			</div>
+			<div class="layer">
+			  <h3>Blog-site</h3>
+			  <p>It is a Natures blog site ,that will connect you to nature.</p>
+			  <a href="https://smitapatel12.github.io/Blog-site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+			</div>
+		  </div>
+		</div>
+		
+	  `
+	  // Add more rows as needed
+	];
+  
+	document.querySelector('.btn-see-more').addEventListener('click', function(e) {
+	  e.preventDefault();
+  
+	  // Load the next set of portfolio items
+	  if (additionalPortfolioItems.length > 0) {
+		const portfolioContent = document.querySelector('.portfolio-content');
+		portfolioContent.innerHTML += additionalPortfolioItems.shift(); // Append the first set of items and remove it from the array
+	  }
+  
+	  // Hide the button if there are no more items to load
+	  if (additionalPortfolioItems.length === 0) {
+		document.querySelector('.btn-see-more').style.display = 'none';
+	  }
+	});
+  </script>
+  
+
+	  
+</body> 
+
+</html>
